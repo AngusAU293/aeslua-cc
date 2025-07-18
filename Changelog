@@ -5,4 +5,7 @@ Version 0.2:
 	- moved ciphermodes into one file
 	- restructured file layout
 Version 0.2.1:
-        - updated email address	
+        - updated email address
+Version 0.2.1-CC:
+    - ported version 0.2.1 to CC:Tweaked
+

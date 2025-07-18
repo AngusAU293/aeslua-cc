@@ -2,8 +2,8 @@ local private = {};
 local public = {};
 aeslua = public;
 
-local ciphermode = require("aeslua.ciphermode");
-local util = require("aeslua.util");
+local ciphermode = require(".cestra.libs.aeslua.aeslua.ciphermode");
+local util = require(".cestra.libs.aeslua.aeslua.util");
 
 --
 -- Simple API for encrypting strings.
@@ -112,3 +112,5 @@ function public.decrypt(password, data, keyLength, mode)
     
     return result;
 end
+
+return aeslua

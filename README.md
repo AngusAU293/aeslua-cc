@@ -1,11 +1,9 @@
-AES for lua
------------
+# AES for lua
 
-This files contain an implementation of AES in lua. The only additional library 
-needed is bitlib.
+This files contain an implementation of AES in lua, that is CC:Tweaked friendly. The only additional library 
+needed is bitlib (should already be included with CC:Tweaked).
 
-Usage
------
+## Usage
 
 aeslua.lua contains a simple API to encrypt and decrypt lua strings.
 
@@ -24,15 +22,15 @@ look into the file src/testcryptotest.lua.
 To use AES directly, have a look at aes.lua and at the example usage in 
 testaes.lua.
 
-Installation
-------------
+## Installation
 
-Edit the LIBDIR variable in the Makefile and run
+Copy the `src` folder to your libs directory, rename it to something like `aes`, and require it in your script.
 
-make install
+```lua
+require("libs.aes.aeslua")
+```
 
-Speed
------
+## Speed
 
 The implementation is rather optimized (it uses tables for most AES operations) 
 but still cannot compete with AES written in other languages. Typical AES 
