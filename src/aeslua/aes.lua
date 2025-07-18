@@ -1,5 +1,5 @@
-local gf = require(".cestra.libs.aeslua.aeslua.gf");
-local util = require(".cestra.libs.aeslua.aeslua.util");
+local gf = require("aeslua.gf");
+local util = require("aeslua.util");
 
 --
 -- Implementation of AES with nearly pure lua (only bitlib is needed) 

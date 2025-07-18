@@ -1,6 +1,6 @@
-local aes = require(".cestra.libs.aeslua.aeslua.aes");
-local util = require(".cestra.libs.aeslua.aeslua.util");
-local buffer = require(".cestra.libs.aeslua.aeslua.buffer");
+local aes = require("aeslua.aes");
+local util = require("aeslua.util");
+local buffer = require("aeslua.buffer");
 
 local public = {};
 
