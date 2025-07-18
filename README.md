@@ -9,12 +9,16 @@ aeslua.lua contains a simple API to encrypt and decrypt lua strings.
 
 To encrypt the string "geheim" with the password "password" use:
 
+```lua
 require("aeslua");
 cipher = aeslua.encrypt("password", "secret");
+```
 
 and to decrypt the string again:
 
+```lua
 plain = aeslua.decrypt("password", cipher);
+```
 
 You can also specify the key size and the encryption mode. For further examples
 look into the file src/testcryptotest.lua.
